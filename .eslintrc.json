@@ -1,5 +1,7 @@
 {
-  "extends": ["next/core-web-vitals", "airbnb",
+  "extends": [
+    "next/core-web-vitals",
+    "airbnb",
     "airbnb/hooks",
     "plugin:import/errors",
     "plugin:import/warnings",
@@ -8,7 +10,12 @@
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
     "prettier",
     "prettier/@typescript-eslint",
-    "prettier/react"],
-    "plugins": ["@typescript-eslint", "import", "jsx-a11y", "prefer-arrow", "react", "react-hooks"],
-    "root": true
+    "prettier/react"
+  ],
+  "rules": {
+    "max-len": ["error", { "max": 300, "skipBlankLines": true, "skipComments": true }]
+  },
+
+  "plugins": ["@typescript-eslint", "import", "jsx-a11y", "prefer-arrow", "react", "react-hooks"],
+  "root": true
 }
